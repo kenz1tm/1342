@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Students List</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - Class: {{ student.class }} - Age: {{ student.age }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add-student">Add New Student</a>
+</body>
+</html>

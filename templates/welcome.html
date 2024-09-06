@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Welcome, {{ session['username'] }}!</h1>
+    <a href="/students">View Students</a><br>
+    <a href="/issued-books">View Issued Books</a><br>
+    <a href="/issue-book">Issue a Book</a><br>
+    <a href="/add-student">Add Student</a><br>
+    <a href="/logout">Logout</a>
+</body>
+</html>

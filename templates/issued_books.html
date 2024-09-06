@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issued Books</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Issued Books</h1>
+    <ul>
+        {% for issued_book in issued_books %}
+            <li>{{ issued_book.name }} borrowed "{{ issued_book.title }}" on {{ issued_book.issue_date }} (Return: {{ issued_book.return_date or 'Not returned' }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/issue-book">Issue New Book</a>
+</body>
+</html>
+
+

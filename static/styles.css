@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 5px;
+}
+
+#book-list {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+#book-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#book-list li {
+    margin: 10px 0;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+}

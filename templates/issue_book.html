@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Book</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Issue a Book</h1>
+    <form id="issueBookForm" action="/issue-book" method="POST">
+        <select name="student_id" required>
+            <option value="" disabled selected>Select Student</option>
+            {% for student in students %}
+                <option value="{{ student.id }}">{{ student.name }}</option>
+            {% endfor %}
+        </select><br>
+        <select name="book_id" required>
+            <option value="" disabled selected>Select Book</option>
+            {% for book in books %}
+                <option value="{{ book.id }}">{{ book.title }}</option>
+            {% endfor %}
+        </select><br>
+        <button type="submit">Issue Book</button>
+    </form>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
